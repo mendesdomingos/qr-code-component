@@ -1,1 +1,3 @@
-# qr-code-component
+# _QR Code Component_
+
+My first project from Frontend Mentor.

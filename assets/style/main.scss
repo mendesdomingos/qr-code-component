@@ -1,16 +1,23 @@
-$primary-color: #00171f;
-$font-color: #e5d9f2;
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
+// Variables
+$background: hsl(212, 45%, 89%);
+$card-color: hsl(0, 0%, 100%);
+$paragraph-color: hsl(220, 15%, 55%);
+$title-color: hsl(218, 44%, 22%);
+
+// A simple reset
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-video {
-    position: fixed;
-    z-index: -1;
-    width: 100vw;
+// Styling content
+body {
+    background-color: $background;
+    font-family: 'Outfit', sans-serif;
 }
 
 main {
@@ -18,18 +25,33 @@ main {
     align-items: center;
     justify-content: center;
     height: 100vh;
-}
 
-main .card {
-    width: 350px;
-    height: 550px;
-    background-color: $primary-color;
-    border-radius: 0.5em;
-    filter: opacity(0.7);
-}
-
-@media (max-width: 1096px) {
-    video {
-        width: unset;
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 360px;
+        height: 550px;
+        background-color: $card-color;
+        border-radius: 1.5em;
+        box-shadow: 0px 10px 15px hsla(0, 0%, 10%, 0.100);
     }
+}
+
+img {
+    width: 325px;
+    border-radius: 0.5em;
+    margin-top: 20px;
+}
+
+h1 {
+    margin-top: 20px;
+    color: $title-color;
+    font-size: 1.5rem;
+}
+
+p {
+    margin-top: 20px;
+    color: $paragraph-color;
 }

@@ -1,13 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-video {
-  position: fixed;
-  z-index: -1;
-  width: 100vw;
+body {
+  background-color: hsl(212, 45%, 89%);
+  font-family: "Outfit", sans-serif;
 }
 
 main {
@@ -16,17 +16,31 @@ main {
   justify-content: center;
   height: 100vh;
 }
-
 main .card {
-  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 360px;
   height: 550px;
-  background-color: #00171f;
-  border-radius: 0.5em;
-  filter: opacity(0.7);
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1.5em;
+  box-shadow: 0px 10px 15px hsla(0, 0%, 10%, 0.1);
 }
 
-@media (max-width: 1096px) {
-  video {
-    width: unset;
-  }
+img {
+  width: 325px;
+  border-radius: 0.5em;
+  margin-top: 20px;
+}
+
+h1 {
+  margin-top: 20px;
+  color: hsl(218, 44%, 22%);
+  font-size: 1.5rem;
+}
+
+p {
+  margin-top: 20px;
+  color: hsl(220, 15%, 55%);
 }
