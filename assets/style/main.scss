@@ -28,9 +28,11 @@ main {
 
     .card {
         display: flex;
+        gap: 15px;
         flex-direction: column;
         align-items: center;
         text-align: center;
+        padding: 20px;
         width: 360px;
         height: 550px;
         background-color: $card-color;
@@ -42,16 +44,13 @@ main {
 img {
     width: 325px;
     border-radius: 0.5em;
-    margin-top: 20px;
 }
 
 h1 {
-    margin-top: 20px;
     color: $title-color;
     font-size: 1.5rem;
 }
 
 p {
-    margin-top: 20px;
     color: $paragraph-color;
 }
